@@ -1,40 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: rgb(150, 182, 252);
 }
 
-.nav{
+.nav {
     background-color: rgb(218, 146, 247);
     font-size: 1.5rem;
 }
 
-.nav-items{
+.nav-items {
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
 
-.nav-link{
-   padding: 20px;
+.nav-link {
+    padding: 20px;
 }
 
-.header :first-child{
+.header :first-child {
     margin-top: 60px;
 }
 
-.color{
+.color {
     text-align: center;
     padding: 80px;
 }
 
-.button{
+.button {
     width: 50px;
     display: inline-block;
     border: 2px solid black;
@@ -42,11 +43,11 @@ body{
     border-radius: 50%;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
-.footer :last-child{
+.footer :last-child {
     display: block;
 }
 
@@ -66,10 +67,27 @@ body{
     background: yellow;
 }
 
-#green{
+#green {
     background: green;
 }
 
-#red{
+#red {
     background: red;
+}
+
+@media (max-width: 480px) {
+    .nav-items {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-link {
+      padding: 8px;
+      margin-right: 15px;
+    }
+
+    .button {
+        width: 45px;
+        height: 45px;
+    }
 }
