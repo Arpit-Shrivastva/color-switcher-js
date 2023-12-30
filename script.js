@@ -3,13 +3,27 @@
 
 const currentTheme = false;
 const body = document.querySelector('body');
-console.log(body);
+// console.log(body);
+
+const head = document.getElementById('head');
+// console.log(head);
+
+const foot = document.getElementById('foot');
+// console.log(foot);
 
 const theme = document.getElementById('dark');
 
-theme.addEventListener('click', () => {
-    body.style.background = '#3e3e42';
-})
+// theme.addEventListener('click', () => {
+//     if (!currentTheme) {
+//         body.style.background = '#3e3e42';
+//         head.style.color = 'white'
+//         foot.style.color = 'white'
+//     }else{
+//         body.style.background = 'rgb(150, 182, 252)';
+//         head.style.color = 'black'
+//         foot.style.color = 'black'
+//     }
+// })
 
 
 document.getElementById('grey').addEventListener('click', function(){
